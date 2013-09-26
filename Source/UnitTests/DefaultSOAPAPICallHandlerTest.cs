@@ -1,5 +1,6 @@
 using PayPal;
 using PayPal.Manager;
+using System.Collections.Generic;
 
 #if NUnit
 /* NuGet Install
@@ -8,7 +9,6 @@ using PayPal.Manager;
     * Add reference from NUnit.2.6.2
  */
 using NUnit.Framework;
-using System.Collections.Generic;
 
 namespace PayPal.NUnitTest
 {
@@ -163,8 +163,6 @@ namespace PayPal.NUnitTest
 }
 #else
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using System;
 
 [TestClass]
 public class DefaultSOAPAPICallHandlerTest
